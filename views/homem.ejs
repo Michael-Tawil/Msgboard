@@ -1,0 +1,7 @@
+<h1>Message Board</h1>
+<a href="/new">Create a new Msg</a>
+<% messages.map(msg=>{%>
+    <p> <%= msg.user %></p>
+    <p> <%= msg.text %></p>
+    <p> <%= msg.added %></p>
+<%})%>
